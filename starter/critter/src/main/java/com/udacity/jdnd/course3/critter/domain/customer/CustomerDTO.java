@@ -1,4 +1,4 @@
-package com.udacity.jdnd.course3.critter.user;
+package com.udacity.jdnd.course3.critter.domain.customer;
 
 import java.util.List;
 
@@ -12,6 +12,17 @@ public class CustomerDTO {
     private String phoneNumber;
     private String notes;
     private List<Long> petIds;
+
+    @Override
+    public String toString() {
+        return "CustomerDTO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", notes='" + notes + '\'' +
+                ", petIds=" + petIds +
+                '}';
+    }
 
     public long getId() {
         return id;

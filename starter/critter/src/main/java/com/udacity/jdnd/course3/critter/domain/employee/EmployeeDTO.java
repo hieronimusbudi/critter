@@ -1,4 +1,6 @@
-package com.udacity.jdnd.course3.critter.user;
+package com.udacity.jdnd.course3.critter.domain.employee;
+
+import com.udacity.jdnd.course3.critter.staticutils.EmployeeSkill;
 
 import java.time.DayOfWeek;
 import java.util.Set;
@@ -12,6 +14,16 @@ public class EmployeeDTO {
     private String name;
     private Set<EmployeeSkill> skills;
     private Set<DayOfWeek> daysAvailable;
+
+    @Override
+    public String toString() {
+        return "EmployeeDTO{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", skills=" + skills +
+                ", daysAvailable=" + daysAvailable +
+                '}';
+    }
 
     public long getId() {
         return id;

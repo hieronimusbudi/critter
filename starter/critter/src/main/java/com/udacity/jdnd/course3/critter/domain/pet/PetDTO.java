@@ -1,4 +1,6 @@
-package com.udacity.jdnd.course3.critter.pet;
+package com.udacity.jdnd.course3.critter.domain.pet;
+
+import com.udacity.jdnd.course3.critter.staticutils.PetType;
 
 import java.time.LocalDate;
 
@@ -60,5 +62,17 @@ public class PetDTO {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "PetDTO{" +
+                "id=" + id +
+                ", type=" + type +
+                ", name='" + name + '\'' +
+                ", ownerId=" + ownerId +
+                ", birthDate=" + birthDate +
+                ", notes='" + notes + '\'' +
+                '}';
     }
 }
